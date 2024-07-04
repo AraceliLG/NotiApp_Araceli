@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
          findViewById<Button>(R.id.button2).setOnClickListener {
             sendNotification("Ivan", "Tienes una notificación de Araceli")
         }
+         findViewById<Button>(R.id.button3).setOnClickListener {
+            sendNotification("Miriam", "Tienes una notificación de Ivan")
+        }
     }
 
     private fun createNotificationChannel() {
